@@ -1,0 +1,52 @@
+    4  ls -l /dev/sda{,[123]}
+    5  ls -l /dev/sda{,1}
+    6  ls -l /dev/sda{,[1234]}
+    7  ls -l 
+    8  man ls
+    9  man lsblk
+   10  lsblk --list
+   11  cat /proc/diskstats
+   12  cat /proc/devices
+   13  man dd
+   14  dd if=/dev/zero of=./fs.img bs=1M count=10
+   15  man losetup
+   16  losetup --find --show ./fs.img
+   17  dd if=/dev/zero of=./fs.img bs=1M count=10
+   18  losetup --find --show ./fs.img
+   19  ls ./
+   21  man losetup
+   22  losetup --list
+   23  su
+   24  sudo losetup --find --show ./fs.img
+   25  su
+   26  losetup --list
+   27  mkfs -t ext4 /dev/loop0
+   28  su
+   29  sudo mkfs -t ext4 /dev/loop0
+   30  blkid /dev/loop0
+   31  su blkid /dev/loop0
+   32  blkid /dev/loop0
+   33  sudo blkid /dev/loop0
+   34  sudo mount /dev/loop0 /mnt
+   35  sudo mount | grep /mnt
+   36  mount -o
+   37  sudo mount -o
+   38  sudo mount -a
+   39  sudo mount
+   40  sudo mount | grep /mnt
+   41  df -h /mnt
+   42  man df
+   43  df -h /mnt
+   44  man df
+   45  df -hi /mnt
+   46  man df
+   47  umount /dev/loop0
+   48  sudo umount /dev/loop0
+   49  sudo tune2fs -l /dev/loop0
+   50  man tune2fs
+   51  losetup --detach /dev/loop0
+   52  sudo losetup --detach /dev/loop0
+   53  sudo losetup --list
+   54  man losetup
+   55  history
+   56  history>laba1FileSystems
